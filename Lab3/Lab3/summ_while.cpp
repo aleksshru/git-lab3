@@ -1,0 +1,12 @@
+#include <math.h>
+double summ(int n)
+{
+	double ai = 0;
+	double i = 0;
+	while (i < n)
+	{
+		ai = ai + pow(-1, i) * (1 - (2 * i - 1) / 2 / (i + 1));
+		++i;
+	}
+	return ai;
+}
